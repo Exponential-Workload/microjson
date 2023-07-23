@@ -1,0 +1,30 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Exponential-Workload",
+      "name": "ExponentialWorkload",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90570076?v=4",
+      "profile": "https://github.com/Exponential-Workload",
+      "contributions": [
+        "code",
+        "doc",
+        "infra",
+        "maintenance",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "microjson",
+  "projectOwner": "Exponential-Workload"
+}
