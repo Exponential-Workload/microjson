@@ -29,10 +29,10 @@ export default class JSONParser {
    * @returns The JavaScript object representation of the JSON string.
    * @throws {Error} If the JSON string is invalid or contains unexpected tokens.
    */
-  public parse(text: string): JSONValue {
+  public parse<T extends JSONValue = JSONValue>(text: string): T {
     this.pos = 0;
     this.input = text.trim();
-    return this.readValue();
+    return this.readValue() as T;
   }
 
   /**
