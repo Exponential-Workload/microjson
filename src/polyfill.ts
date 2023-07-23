@@ -30,15 +30,15 @@ export default class JSON {
    *
    * @param {string} text - The JSON string to parse.
    * @param {(key: any, value: any) => any} [reviver] - The reviver function to apply to the parsed JSON.
-   * @returns {any} The parsed JSON object.
+   * @returns {T} The parsed JSON object.
    */
-  public static parse(text: string, reviver?: (key: any, value: any) => any): any {
+  public static parse<T extends lib.JSONValue = lib.JSONValue>(text: string, reviver?: (key: any, value: any) => any): T {
     const parser = new lib.JSONParser();
     const parsed = parser.parse(text);
     if (reviver) {
       return JSON._walk(parsed, reviver);
     }
-    return parsed;
+    return parsed as T;
   }
 
   /**
