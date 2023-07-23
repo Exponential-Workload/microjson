@@ -1,1 +1,3 @@
-export * from './dist/polyfill'
+export {
+  default
+} from './dist/polyfill'
