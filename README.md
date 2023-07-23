@@ -1,5 +1,7 @@
 <div align="center">
 
+[![Social Card](./social.png)](https://microjson.expo.moe/)
+
 # MicroJSON
 
 [![Build & Deploy](https://github.com/Exponential-Workload/microjson/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/Exponential-Workload/microjson/actions/workflows/mkdocs.yml) [![Tests](https://github.com/Exponential-Workload/microjson/actions/workflows/test.yml/badge.svg)](https://github.com/Exponential-Workload/microjson/actions/workflows/test.yml)<br/>
