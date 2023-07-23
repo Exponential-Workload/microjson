@@ -1,4 +1,3 @@
 dist
-docs/*
-!docs/LICENSE.txt
+docs
 node_modules
