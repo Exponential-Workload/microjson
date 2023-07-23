@@ -1,1 +1,1 @@
-return require('./dist/polyfill');
+return require('./dist/poly');
