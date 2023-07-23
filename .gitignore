@@ -1,0 +1,4 @@
+dist
+docs/*
+!docs/LICENSE.txt
+node_modules
