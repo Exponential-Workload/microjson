@@ -32,7 +32,7 @@ console.log(JSON.parse('{"hello": "world"}'));
 console.log(JSON.stringify({ hello: 'world' }, null, 2));
 ```
 
-## Contributors
+## Contributors ​
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
