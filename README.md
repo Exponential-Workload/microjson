@@ -31,7 +31,17 @@ console.log(JSON.stringify({ hello: 'world' }, null, 2));
 ```
 
 ## Attribution
-Tests & JSDoc were written using ChatGPT because I'm lazy, however the core codebase is still mine.
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+*Tests & JSDoc were written using ChatGPT because I'm lazy.*
 
 ## License
 This project is licensed under the MIT license. See [LICENSE](https://microjson.expo.moe/LICENSE.txt) for more information.
