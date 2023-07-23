@@ -1,5 +1,12 @@
+<p align="center">
+
 # MicroJSON
+
+[![Tests](https://github.com/Exponential-Workload/microjson/actions/workflows/test.yml/badge.svg)](https://github.com/Exponential-Workload/microjson/actions/workflows/test.yml)
+
 A JSON implementation quickly thrown together.
+
+</p>
 
 ## Example
 ```ts
