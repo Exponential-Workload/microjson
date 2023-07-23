@@ -33,7 +33,7 @@ console.log(JSON.parse('{"hello": "world"}'));
 console.log(JSON.stringify({ hello: 'world' }, null, 2));
 ```
 
-## Attribution
+## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
