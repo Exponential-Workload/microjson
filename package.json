@@ -19,14 +19,6 @@
     "./polyfill": {
       "import": "./dist/polyfill.esm.js",
       "require": "./dist/polyfill.js"
-    },
-    "/polyfill": {
-      "import": "./dist/polyfill.esm.js",
-      "require": "./dist/polyfill.js"
-    },
-    "polyfill": {
-      "import": "./dist/polyfill.esm.js",
-      "require": "./dist/polyfill.js"
     }
   },
   "author": "Expo",
