@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Build & Deploy
 
 on:
   push:
@@ -39,6 +39,15 @@ jobs:
         run: pnpm run build
       - name: Build Docs
         run: pnpm run build:docs
+      - name: Copy files
+        run: |
+          cp LICENSE docs/LICENSE.txt
+          cp -r src docs/src
+          cp -r dist docs/dist
+      - name: Create Indexes
+        uses: Exponential-Workload/create-index-action@master
+        with:
+          dir: 'docs'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
