@@ -21,7 +21,7 @@ import { JSONParser, JSONSerializer } from '@3xpo/microjson';
 // parser:
 const parser = new JSONParser();
 console.log(parser.parse<{
-  hello: string; // this object is optional, however it allows specifying detailed types
+  hello: string; // this object is optional, however it allows specifying detailed types for the return value without casting
 }>('{"hello": "world"}'));
 
 // serializer:
@@ -32,7 +32,9 @@ console.log(serializer.serialize({ hello: 'world' }));
 ### As a polyfill
 ```ts
 import JSON from '@3xpo/microjson/polyfill';
-console.log(JSON.parse('{"hello": "world"}'));
+console.log(JSON.parse<{
+  hello: string; // yet again, this object is optional, however it allows specifying detailed types for the return value without casting
+}>('{"hello": "world"}'));
 console.log(JSON.stringify({ hello: 'world' }, null, 2));
 ```
 
