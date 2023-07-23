@@ -23,7 +23,10 @@ describe('JSONParser', () => {
       hobbies: ['Reading', 'Swimming', 'Gaming'],
     };
 
-    const parsedJSON = parser.parse(jsonString);
+    const parsedJSON = parser.parse<{
+      name: string;
+      hobbies: string[];
+    }>(jsonString);
     expect(parsedJSON).toEqual(expectedObject);
   });
 

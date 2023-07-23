@@ -20,7 +20,9 @@ import { JSONParser, JSONSerializer } from '@3xpo/microjson';
 
 // parser:
 const parser = new JSONParser();
-console.log(parser.parse('{"hello": "world"}'));
+console.log(parser.parse<{
+  hello: string; // this object is optional, however it allows specifying detailed types
+}>('{"hello": "world"}'));
 
 // serializer:
 const serializer = new JSONSerializer();
