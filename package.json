@@ -1,6 +1,6 @@
 {
   "name": "@3xpo/microjson",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A pure TypeScript JSON parser",
   "main": "dist/lib.js",
   "module": "dist/lib.esm.js",
@@ -17,6 +17,14 @@
       "require": "./dist/lib.js"
     },
     "./polyfill": {
+      "import": "./dist/polyfill.esm.js",
+      "require": "./dist/polyfill.js"
+    },
+    "/polyfill": {
+      "import": "./dist/polyfill.esm.js",
+      "require": "./dist/polyfill.js"
+    },
+    "polyfill": {
       "import": "./dist/polyfill.esm.js",
       "require": "./dist/polyfill.js"
     }
