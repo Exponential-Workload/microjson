@@ -4,11 +4,18 @@ import terser from '@rollup/plugin-terser'
 export default [
   {
     input: 'src/main.ts',
-    output: {
-      file: 'dist/lib.js',
-      format: 'cjs',
-      sourcemap: true,
-    },
+    output: [
+      {
+        file: 'dist/lib.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/lib.esm.js',
+        format: 'esm',
+        sourcemap: true,
+      }
+    ],
     plugins: [
       typescript({
         tsconfig: './tsconfig.json',
@@ -20,12 +27,19 @@ export default [
     external: [],
   },
   {
-    input: 'src/main.ts',
-    output: {
-      file: 'dist/lib.esm.js',
-      format: 'esm',
-      sourcemap: true,
-    },
+    input: 'src/polyfill.ts',
+    output: [
+      {
+        file: 'dist/poly.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/poly.esm.js',
+        format: 'esm',
+        sourcemap: true,
+      }
+    ],
     plugins: [
       typescript({
         tsconfig: './tsconfig.json',
@@ -35,5 +49,5 @@ export default [
       terser(),
     ],
     external: [],
-  }
+  },
 ];

@@ -11,6 +11,16 @@
     "test": "jest",
     "prepublishOnly": "npm run build && npm run build:docs"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/lib.esm.js",
+      "require": "./dist/lib.js"
+    },
+    "./polyfill": {
+      "import": "./dist/polyfill.esm.js",
+      "require": "./dist/polyfill.js"
+    }
+  },
   "author": "Expo",
   "license": "MIT",
   "devDependencies": {

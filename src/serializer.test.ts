@@ -20,7 +20,11 @@ describe('JSONSerializer', () => {
     const expectedOutput =
       `{
   "name": "Astolfo",
-  "gender": ["Male", "Femboy", "Secret"],
+  "gender": [
+    "Male",
+    "Femboy",
+    "Secret"
+  ],
   "age": null,
   "isStudent": true,
   "address": {
