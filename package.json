@@ -13,14 +13,16 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/main.d.ts",
       "import": "./dist/lib.esm.js",
       "require": "./dist/lib.js",
-      "types": "./dist/main.d.ts"
+      "default": "./dist/lib.esm.js"
     },
     "./polyfill": {
+      "types": "./dist/polyfill.d.ts",
       "import": "./dist/poly.esm.js",
       "require": "./dist/poly.js",
-      "types": "./dist/polyfill.d.ts"
+      "default": "./dist/poly.esm.js"
     }
   },
   "author": "Expo",
